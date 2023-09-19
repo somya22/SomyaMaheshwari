@@ -233,6 +233,7 @@ h3 {
   }
   
   .experience-text {
+    font-size: 14.5px; /* Adjust the font size as needed */
     flex: 1; /* Expand the content div to take remaining width */
   }
   
@@ -257,12 +258,40 @@ h3 {
   }
   
   
-/* CSS styles for the projects section */
 /* CSS for the projects section */
+
+
+@media screen and (min-width: 1440px) {
+    #projects {
+        grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Three cards per row for very large screens */
+        gap: 0px;
+    }
+
+    .project-card {
+        height: 600px;
+        width: 50px;
+        padding-left: 2%;
+        gap: 0px;
+
+    }
+
+    .project-card-container {
+        height: 500px; /* Set a fixed height for the project card container */
+    
+    }
+}
+
 #projects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row for desktop and laptop screens */
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row for all screens */
+    gap: 20px; /* Default gap for all screens */
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Default gap for all screens */
+    grid-auto-rows: 1fr; /* Set the height for each row in the grid to be equal */
 }
 
 
@@ -270,13 +299,6 @@ h3 {
     grid-column: 1/-1; /* Place the "Projects" heading in the first grid cell */
 }
 
-.project-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    grid-auto-rows: 1fr; /* Set the height for each row in the grid to be equal */
-
-}
 
 .project-card {
     border-radius: 5px;
@@ -362,7 +384,6 @@ h3 {
 
 
 /* Add styles for the "Contact" section */
-/* Add styles for the "Contact" section */
 #contact {
     display: flex;
     flex-direction: row;
@@ -410,24 +431,8 @@ h3 {
 }
 
 
-/* Media query for larger screens (min-width: 1440px) */
-@media screen and (min-width: 1440px) {
-    #projects {
-        grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Three cards per row for very large screens */
-        gap: 20px;
-    }
 
-    .project-card {
-        height: 600px;
-        width: 450px;
-        padding-left: 2%;
-    }
 
-    .project-card-container {
-        height: 500px; /* Set a fixed height for the project card container */
-    
-    }
-}
 
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
