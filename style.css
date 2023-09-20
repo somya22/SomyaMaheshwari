@@ -364,7 +364,7 @@ h3 {
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     #projects {
         grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Three cards per row for very large screens */
         gap: 10px;
