@@ -166,10 +166,6 @@ h3 {
 
 
 /* Education Section */
-
-
-
-
 .education-card {
     margin-top: 20px;
     border: 1px solid #ccc;
@@ -197,7 +193,8 @@ h3 {
     margin-top: 0.3rem;
   }
 
-  #experience {
+/*Experience*/
+#experience {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -264,10 +261,6 @@ h3 {
   
   
 /* CSS for the projects section */
-
-
-
-
 #projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two cards per row for all screens */
@@ -382,7 +375,7 @@ h3 {
 }
 
 
-/* Add styles for the "Contact" section */
+/* CSS Styles for the "Contact" section */
 #contact {
     display: flex;
     flex-direction: row;
